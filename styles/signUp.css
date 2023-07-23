@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;  /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    height: 100vh;
+    overflow: hidden;
+}
+
+.signup-container {
+    display: flex;
+    height: fit-content;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-undertext {
+    color: #FFF;
+    text-align: center;
+    margin-top: .2rem;
+    font-weight: 300;
+    font-size: 1rem
+}
+
+.left-signup {
+    background: #ABC3FF;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.text-container {
+    width: 47.5rem;
+    
+}
+
+.left-signup-text {
+    font-size: 2.2rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: 300;
+}
+.background-svg {
+    position: relative;
+    z-index: 2;
+    width: 29rem;
+    color: #C2D3FF;
+    visibility: visible;
+}
+
+.left-signup-image-1 {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.6rem;
+    position: relative;
+    z-index: 3;
+    top: -40rem;
+    left: -18rem;
+}
+
+.left-signup-image-2 {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.6rem;
+    position: relative;
+    z-index: 3;
+    left: 20rem;
+    top: -33rem;
+}
+
+/* RIGHT SIDE OF SIGNUP PAGE */
+
+.right-signup {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    padding: 1rem;
+}
+
+.signup-header {
+    font-size: 2.3rem;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+}
+
+.box-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.signup-box {
+    border: 1.5px solid #C2D3FF;
+}
+
+.box {
+    width: 18.2rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.signup-box-img {
+    display: flex;
+    align-items: start;
+}
+
+.signup-profile {
+    position: relative;
+    left: 1.7rem;
+}
+
+.profile {
+    width: 6rem;
+}
+
+.signup-check {
+    position: relative;
+    left: 4rem;
+    top: -.8rem;
+    width: 2rem;
+}
+
+.signup-p {
+    color: #0049FF;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.signin-box {
+    border: 1.5px solid #000;
+}
+
+.signin-p {
+    color: #000;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.email-p {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.email-input {
+    width: 30vw;
+    height: 3.6rem;
+    position: relative;
+    top: -.9rem;
+}
+
+.email-input::placeholder {
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.password-p {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.password-input {
+    width: 30vw;
+    height: 3.6rem;
+    position: relative;
+    top: -.9rem;
+}
+
+input[type = 'text'] {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.password-input::placeholder {
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.TandC-container {
+    display: flex;
+    gap: .8rem;
+}
+
+.TandC-p {
+    font-size: 1.2rem;
+}
+
+.TandC-p > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.getStarted {
+    width: 30vw;
+    height: 3.6rem;
+    background: #ABC3FF;
+    font-size: 1.7rem; 
+    color: #FFF;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.haveAnAccount {
+    color: #0049FF;
+    font-size: 1.5rem;
+}
+
+.haveAnAccount b {
+    font-size: 1.5rem;
+}
+
+.quick {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    top: -1.4rem;
+}
+
+.quick span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hrDiv {
+    width: 15vw;
+    border: none;
+    border-bottom: 2px solid #000;
+    position: relative;
+    top: -.6rem;
+}
+
+.signUpOptions {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUp-box {
+    width: 12vw;
+    height: 4rem;
+    display: flex;
+    gap: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    border: 1px solid #000;
+    position: relative;
+    top: -2rem;
+}
+
+.signUp-box:hover {
+    cursor: pointer;
+}
+
+.signUp-box p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 2.5215rem;  
+    position: relative;
+    top: .4rem; 
+}

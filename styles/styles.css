@@ -1,0 +1,453 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;        /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif'
+}
+
+#header {
+    padding: 1rem;
+    background-image: url('../public/images/BG.jpeg');
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.header-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 197, 255, .9);
+    position: relative;
+    z-index: 20;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 3rem;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-undertext {
+    color: #FFF;
+    text-align: center;
+    /* opacity: .8; */
+    font-weight: 300;
+    font-size: 1rem
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.navigation > * {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.6rem;
+}
+
+input.searchbar {
+    color: #FFF;
+    width: 168.96px;
+    height: 32px;
+    border-radius: 16px;
+    background: transparent url('../public/images/search.png') no-repeat 90%;
+    outline: none;
+    /* border: none; */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.4%;
+    backdrop-filter: blur(5px);
+}
+
+.searchAndProfile-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.searchbar-span {
+    position: absolute;
+    left: 77%;
+    top: 19.5px;
+    padding: 0 20px;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.header-h1 {
+    font-size: 2.5rem;
+    color: #FFF;
+    width: 50vw;
+    margin-left: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130.4%;
+}
+
+.header-text {
+    color: #FFF;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130.4%;
+    width: 50vw;
+    margin-left: 4rem;
+}
+
+.header-btn {
+    display: flex;
+    width: 13.1rem;
+    height: 5.9rem;
+    font-size: 16px;
+    margin-left: 4rem;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 2.95rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #FFF;
+}
+
+/******************** SERVICES SECTION **************************/
+#services {
+    display: flex;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
+}
+
+.services-image {
+    width: 100%;
+}
+
+.services-image-container {
+    width: 50%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.services-writeup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 2rem;
+}
+
+.writeup-h1 {
+    font-size: 2.7rem;
+    color: #31467A;
+    font-weight: bolder;
+}
+
+.writeup-p {
+    color: #31467A;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1rem; */
+}
+
+.services-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42rem;
+    height: 16.6rem;
+}
+
+.services-card-img {
+    width: 6rem;
+    height: 5.79rem;
+}
+
+.services-card-img-pad {
+    width: 3.5rem;
+    height: 2rem;
+}
+
+.card-writeup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: rgba(204, 218, 253, 0.60);
+    padding: .5rem;
+    gap: .3rem;
+    width: 75%;
+    height: 75%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-writeup-header {
+    font-size: 2.4rem;
+    color: #31467A;
+    font-weight: 600;
+    
+}
+
+.card-writeup-p {
+    font-size: 1.6rem;
+    color: #31467A;
+    font-weight: 300;
+    font-size: 1.2rem;
+    
+}
+
+/********************* CATEGORIES SECTION **********************/
+#categories {
+    height: fit-content;
+    background: #E4E9FC;
+    padding: 2rem;
+}
+
+.categories-h1 {
+    color: #31467A;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    
+}
+
+.categories-p {
+    color: #31467A;
+    font-size: .7rem;
+    font-weight: lighter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.categories-p span {
+    font-size: 1.3rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template: 
+    'Laptop Phone Tab Console'
+    'Watch Camera VR  Speaker';
+    align-items: center;
+    row-gap: 1rem;
+}
+.gallery-img {
+    border-radius: 20px;
+    height: 310px;
+    width: 310px;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 75%;
+    background-size: contain;
+}
+
+.gallery-img-desc {
+    display: block;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.gallery-img-1 {
+    grid-area: Laptop;
+}
+.gallery-img-2 {
+    grid-area: Phone;
+}
+.gallery-img-3 {
+    grid-area: Tab;
+}
+.gallery-img-4 {
+    grid-area: Console;
+}
+.gallery-img-5 {
+    grid-area: Watch;
+}
+.gallery-img-6 {
+    grid-area: Camera;
+}
+.gallery-img-7 {
+    grid-area: VR;
+}
+.gallery-img-8 {
+    grid-area: Speaker;
+}
+
+/* BOOKING SECTION */
+#booking {
+    display: flex;
+    padding: 2rem;
+    border-radius: 29px;
+}
+
+.booking-writeup {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.booking-header {
+    color: #31467A;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130.4%;
+}
+
+
+.booking-p {
+    color: #31467A;
+    font-size: 2.4rem;
+    font-style: normal;
+    line-height: 130.4%;
+    font-weight: lighter;
+}
+
+.booking-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-btns {
+    border-radius: 2.95rem;
+    width: 27.7rem;
+    height: 5.9rem;
+    outline: none;
+    border: none;
+}
+
+.cta-btns-book {
+    background: #31467A;
+    font-weight: 400;
+    font-size: 1.6rem;   
+}
+
+.cta-btns-chat {
+    background: #ABC3FF;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.booking-img {
+    margin-top: -1rem;
+}
+
+/******************** FOOTER SECTION *****************/
+#footer {
+    background: #ABC3FF;
+    display: flex;
+    padding: 2rem;
+}
+
+.footer-info {
+    display: grid;
+    grid-template: 
+    'Address Twitter'
+    'Phone Insta'
+    'Mail Facebook';
+    align-items: center;
+    width: 50%;
+    justify-content: stretch;
+    justify-items: start;
+}
+
+.footer-address-container {
+    grid-area: Address;
+}
+
+.footer-phone-container {
+    grid-area: Phone;
+}
+
+.footer-mail-container {
+    grid-area: Mail;
+}
+
+.footer-facebook-container {
+    grid-area: Facebook;
+}
+
+.footer-insta-container {
+    grid-area: Insta;
+}
+
+.footer-twitter-container {
+    grid-area: Twitter;
+}
+
+.footer-info svg {
+    width: 22.5px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-container p {
+    color: #FFF;
+    font-size: 1.3rem;
+}
+
+.footer-aboutus-container {
+    width: 50%;
+}
+
+.aboutus-header {
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.aboutus-p {
+    color: #FFF;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.footer-copyright-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-copyright {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.81);
+}

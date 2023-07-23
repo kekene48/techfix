@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/signUp.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <title>TechFix SignUp</title>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="left-signup">
+        <div class="logo-container">
+          <img
+            src="./public/images/techfix.png"
+            alt="logo"
+            class="header-logo"
+          />
+          <span class="logo-undertext">REPAIR. REVIVE. REIMAGINE</span>
+        </div>
+        <div class="text-container">
+          <p class="left-signup-text">
+            We are here to rescue your devices from the clutches of damage,
+            restoring them to their former glory and beyond.
+          </p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="370"
+          height="355"
+          viewBox="0 0 370 355"
+          fill="none"
+          class="background-svg"
+        >
+          <path
+            d="M33.6036 322.727H0V225.909H100.811V258.182H59.1423C86.1931 297.07 132.398 322.727 184.82 322.727C224.925 322.727 263.387 307.427 291.745 280.191C320.104 252.956 336.036 216.017 336.036 177.5H369.639C369.639 275.609 286.974 355 184.82 355C122.317 355 67.0391 325.148 33.6036 279.643V322.727ZM0 177.5C0 79.3909 82.6648 0 184.82 0C247.322 0 302.6 29.8523 336.036 75.3568V32.2727H369.639V129.091H268.828V96.8182H310.497C283.446 57.9295 237.241 32.2727 184.82 32.2727C144.715 32.2727 106.252 47.5734 77.8937 74.8088C49.5352 102.044 33.6036 138.983 33.6036 177.5H0Z"
+            fill="#C2D3FF"
+          />
+        </svg>
+        <img
+          src="./public/images/image-1.png"
+          alt="Phones"
+          class="left-signup-image-1"
+        />
+        <img
+          src="./public/images/unsplash-mn-rr-8-o-5-jgk.png"
+          alt=""
+          class="left-signup-image-2"
+        />
+      </div>
+
+      <!-- RIGHT SIDE OF SIGNUP PAGE -->
+
+      <div class="right-signup">
+        <h2 class="signup-header">Sign up</h2>
+        <div class="box-container">
+          <div class="signup-box box">
+            <div class="signup-box-img">
+              <img
+                src="./public/images/group-6.png"
+                alt="user profile"
+                class="signup-profile profile"
+              />
+              <img
+                src="./public/images/group-8.png"
+                alt="checkmark"
+                class="signup-check"
+              />
+            </div>
+
+            <p class="signup-p">Sign up</p>
+          </div>
+          <div class="signin-box box">
+            <img
+              src="./public/images/group-6.png"
+              alt="user profile"
+              class="signin-profile profile"
+            />
+            <p class="signin-p">Sign in</p>
+          </div>
+        </div>
+        <div class="email-container">
+          <p class="email-p">Email address</p>
+          <input
+            type="text"
+            class="email-input"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="password-container">
+          <p class="password-p">Create Password</p>
+          <input
+            type="text"
+            class="password-input"
+            placeholder="More than 8 characters"
+          />
+        </div>
+        <div class="TandC-container">
+          <input type="checkbox" name="TandC" id="TandC" />
+          <label for="TandC" class="TandC-p"
+            >Accept <a href="#">Terms of Service</a> and
+            <a href="#">Privacy Policy</a></label
+          >
+        </div>
+        <button class="getStarted">Get Started</button>
+        <p class="haveAnAccount">Already have an account? <b>Sign in</b></p>
+        <div class="quick">
+          <div class="hrDiv"></div>
+          <span>Quick Sign up</span>
+          <div class="hrDiv"></div>
+        </div>
+        <div class="signUpOptions">
+          <div class="google signUp-box">
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.5001 11.7496C22.5001 10.8267 22.4252 10.1532 22.2631 9.45483H11.7245V13.6203H17.9104C17.7858 14.6555 17.1123 16.2145 15.6157 17.262L15.5947 17.4015L18.9268 19.9828L19.1577 20.0059C21.2778 18.0478 22.5001 15.1668 22.5001 11.7496Z"
+                fill="#4285F4"
+              />
+              <path
+                d="M11.7245 22.7245C14.755 22.7245 17.2992 21.7267 19.1576 20.0057L15.6156 17.2619C14.6678 17.9229 13.3956 18.3843 11.7245 18.3843C8.75621 18.3843 6.23696 16.4263 5.33891 13.72L5.20728 13.7311L1.74252 16.4126L1.6972 16.5385C3.54299 20.2052 7.33439 22.7245 11.7245 22.7245Z"
+                fill="#34A853"
+              />
+              <path
+                d="M5.3389 13.7201C5.10194 13.0217 4.9648 12.2734 4.9648 11.5002C4.9648 10.7269 5.10194 9.97862 5.32643 9.28021L5.32015 9.13147L1.81197 6.40698L1.69719 6.46158C0.936452 7.98314 0.499939 9.69179 0.499939 11.5002C0.499939 13.3086 0.936452 15.0171 1.69719 16.5387L5.3389 13.7201Z"
+                fill="#FBBC05"
+              />
+              <path
+                d="M11.7245 4.61574C13.8321 4.61574 15.2539 5.52617 16.0646 6.28699L19.2324 3.194C17.2868 1.38562 14.755 0.275635 11.7245 0.275635C7.33439 0.275635 3.54299 2.79489 1.6972 6.46153L5.32644 9.28016C6.23696 6.57382 8.75621 4.61574 11.7245 4.61574Z"
+                fill="#EB4335"
+              />
+            </svg>
+            <p>Google</p>
+          </div>
+          <div class="facebook signUp-box">
+            <svg
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 11.5669C22 5.4918 17.0751 0.566895 11 0.566895C4.92491 0.566895 0 5.49171 0 11.5669C0 17.0573 4.02256 21.6081 9.28125 22.4333V14.7466H6.48828V11.5669H9.28125V9.14346C9.28125 6.38658 10.9235 4.86377 13.4361 4.86377C14.6396 4.86377 15.8984 5.07861 15.8984 5.07861V7.78564H14.5114C13.1448 7.78564 12.7188 8.63359 12.7188 9.50354V11.5669H15.7695L15.2818 14.7466H12.7188V22.4333C17.9774 21.6081 22 17.0574 22 11.5669Z"
+                fill="#1877F2"
+              />
+            </svg>
+            <p>Facebook</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
