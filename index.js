@@ -5,8 +5,7 @@ function myFunction() {
     document.body.innerHTML = `
           <h1>Please use a device of width larger than 1280px</h1>
     `;
-    alert("mediaQuery matched");
   }
 }
 
-document.body.addEventListener("resize", myFunction);
+window.addEventListener("resize", myFunction);
