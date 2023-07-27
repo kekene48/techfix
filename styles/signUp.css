@@ -31,6 +31,7 @@ body {
 
 .left-signup {
     background: #ABC3FF;
+    background-image: url('../public/images/SignUp-background-image.png');
     width: 50vw;
     display: flex;
     flex-direction: column;
